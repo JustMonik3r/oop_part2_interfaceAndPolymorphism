@@ -1,11 +1,12 @@
 package oop_part2_interfaceAndPolymorphism;
 
-public class Bicycle {
+public class Bicycle extends TwoWheeledVehicle {
 
-    public String modelName;
-    public int wheelsCount;
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
 
-    public void updateTyre() {
+    public void replaceTyre() {
         System.out.println("Меняем покрышку");
     }
 }
